@@ -1,0 +1,49 @@
+body {background-color: #DCDCDC;}
+
+.card-size{
+	width: 55rem;
+	padding: 2%;
+	margin-top: 10%;
+	text-align: center;
+	margin-left:  18%;
+	margin-right: 20%;
+
+}
+.foto{
+	border-radius: 50%;
+	margin-top: 4%;
+	margin-bottom: 4%;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  margin-left: 37%;
+}
+.image img {
+  -webkit-transition: all 1s ease;
+  /* Safari and Chrome */
+  -moz-transition: all 1s ease;
+  /* Firefox */
+  -o-transition: all 1s ease;
+  /* IE 9 */
+  -ms-transition: all 1s ease;
+  /* Opera */
+  transition: all 1s ease;
+}
+.image:hover img {
+  -webkit-transform: scale(1.25);
+  /* Safari and Chrome */
+  -moz-transform: scale(1.25);
+  /* Firefox */
+  -ms-transform: scale(1.25);
+  /* IE 9 */
+  -o-transform: scale(1.25);
+  /* Opera */
+  transform: scale(1.25);
+}
