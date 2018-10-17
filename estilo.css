@@ -1,18 +1,25 @@
 body {background-color: #DCDCDC;}
 
 .card-size{
-	width: 55rem;
 	padding: 2%;
 	margin-top: 10%;
-	text-align: center;
-	margin-left:  18%;
 }
+.titulo{
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+}
+
+.col-md-3{
+    width:100%;
+    float:left;
+    margin:0;
+}
+
 .foto{
 	border-radius: 50%;
 	margin-top: 4%;
 	margin-bottom: 4%;
 }
-
 img {
   max-width: 100%;
   display: block;
@@ -44,4 +51,77 @@ img {
   -o-transform: scale(1.25);
   /* Opera */
   transform: scale(1.25);
+}
+
+
+
+
+
+@import "compass/css3";
+
+html {
+  background: #eff0ef;
+}
+
+.testimonial-quote {
+    font-size: 13px;
+}
+
+.testimonial-quote blockquote {
+    /* Negate theme styles */
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+    background: none;
+    color: gray;
+    font-family: Georgia, serif;
+    font-size: 1.5em;
+    font-style: italic;
+    line-height: 1.4 !important;
+    margin: 0;
+    position: relative;
+    text-shadow: 0 1px white;
+    z-index: 600;
+}
+
+.testimonial-quote blockquote * {
+    box-sizing: border-box; 
+}
+
+.testimonial-quote blockquote p {
+    color: #75808a; 
+}
+
+.testimonial-quote blockquote p:first-child:before {
+    content: '\201C';
+    color: #81bedb;
+    font-size: 7.5em;
+    opacity: .3;
+    position: absolute;
+    top: -.4em;
+    text-shadow: none;
+    z-index: -300;
+}
+
+.testimonial-quote cite {
+    color: gray;
+    font-size: .8em; 
+}
+  
+.testimonial-quote cite span {
+    color: #5e5e5e;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0 1px white; 
+}
+
+.testimonial-quote {
+    padding: 5%;
+}
+.testimonial-quote.right cite {
+    text-align: right; 
 }
