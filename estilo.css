@@ -1,4 +1,6 @@
-body {background-color: #DCDCDC;}
+body {background-color: #DCDCDC;
+	position: relative;
+}
 
 .card-size{
 	padding: 2%;
@@ -58,10 +60,6 @@ img {
 
 
 @import "compass/css3";
-
-html {
-  background: #eff0ef;
-}
 
 .testimonial-quote {
     font-size: 13px;
