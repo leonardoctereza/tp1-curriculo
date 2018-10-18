@@ -4,9 +4,14 @@ body {background-color: #e9ecef;
 .container{
     margin-top: 3%;
 }
+
 .div-card{
 	border: 6px solid rgba(28,110,164,0.45);
 	border-radius: 16px;
+}
+
+.row{
+	margin-top: -10%;
 }
 
 .card-size{
@@ -40,7 +45,7 @@ body {background-color: #e9ecef;
 	margin-bottom: 4%;
 }
 img {
-  max-width: 100%;
+  max-width: 80%;
   display: block;
 }
 
