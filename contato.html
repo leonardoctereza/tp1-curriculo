@@ -8,6 +8,24 @@
 
 	    
 	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 50%;
+        width: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+
+
+
 
 	    <link rel="stylesheet" type="text/css" href="social.css">
 	    <link rel="stylesheet" type="text/css" href="estilo.css"> 
@@ -39,11 +57,45 @@
   </div>
 </nav>
 
-<div class="jumbotron jumbotron-fluid">
+
+  <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: -25.344, lng: 131.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+ </script>
+<div><button onclick="getLocation()" class="btn-success button">Ir para</button></div>
+ 
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+
   <div class="container">
-    <h1 class="display-4">Formas de contato</h1>
+    <h1 class="display-4 titulo titulo1">Entre em contato</h1>
     <div>
-    <a href="https://www.facebook.com/leonardo.carvalhotereza" class="fa fa-facebook" target="_blank"></a>
+    <a href="https://www.facebook.com/leonardo.carvalhotereza" class="fa fa-facebook first" target="_blank"></a>
     <a href="https://www.linkedin.com/in/leonardo-tereza-310b63a0/" class="fa fa-linkedin"target="_blank"></a>
     <a href="https://www.instagram.com/leo_tereza/"target="_blank" class="fa fa-instagram"></a>
     <a href="https://github.com/leonardoctereza"target="_blank" class="fa fa-github"></a>
@@ -53,13 +105,15 @@
 
 
   </div>
-</div>
 
   
 
 
 
 
+ <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClWdwFqGE2UF4NnEhRmotswZcQLRM3K4k&callback=initMap">
+</script>
 
 
 

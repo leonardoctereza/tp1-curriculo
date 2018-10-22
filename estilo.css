@@ -154,3 +154,22 @@ img {
 .testimonial-quote.right cite {
     text-align: right; 
 }
+
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 45%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.titulo1{
+  margin-top: 2%;
+}
